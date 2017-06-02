@@ -36,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/../wechat-master/wechat-master/wxModel.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="51" />
+              <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="51" />
               <folding>
                 <element signature="e#1542#4445#0#PHP" expanded="false" />
                 <element signature="e#4500#5396#0#PHP" expanded="false" />
@@ -68,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/wx.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="50">
-              <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+              <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -95,8 +95,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="621" />
-    <option name="y" value="4" />
+    <option name="x" value="638" />
+    <option name="y" value="62" />
     <option name="width" value="749" />
     <option name="height" value="724" />
   </component>
@@ -237,15 +237,15 @@
       <option name="presentableId" value="Default" />
       <updated>1496402843084</updated>
       <workItem from="1496402844379" duration="40000" />
-      <workItem from="1496403753831" duration="2540000" />
+      <workItem from="1496403753831" duration="2891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2580000" />
+    <option name="totallyTimeSpent" value="2931000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="621" y="4" width="749" height="724" extended-state="1" />
+    <frame x="638" y="62" width="749" height="724" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19013062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -297,7 +297,7 @@
     <entry file="file://$PROJECT_DIR$/../wechat-master/wechat-master/wxModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="51" />
+          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="51" />
           <folding>
             <element signature="e#1542#4445#0#PHP" expanded="false" />
             <element signature="e#4500#5396#0#PHP" expanded="false" />
@@ -315,7 +315,7 @@
     <entry file="file://$PROJECT_DIR$/wx.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
           <folding />
         </state>
       </provider>
