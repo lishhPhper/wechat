@@ -18,7 +18,7 @@ class wxModel
 
     public function content($str) 
     {
-        $data = ['time'=>datetime('Y-m-d H:i:s',time()),'str'=>$str];
+        $data = ['time'=>date('Y-m-d H:i:s',time()),'str'=>$str];
 
         file_put_contents('./1.txt', json_encode($data)."\r\n",FILE_APPEND);
     }
@@ -27,7 +27,7 @@ class wxModel
     {
 		//get post data, May be due to the different environments
 //		$postStr = $GLOBALS["HTTP_RAW_POST_DATA"];
-        $postStr = file_put_contents('php://input');
+        $postStr = file_get_contents('php://input');
         $this->content($postStr);
       	//extract post data
 		if (!empty($postStr)){
