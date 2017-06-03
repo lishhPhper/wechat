@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45088533-1da5-451a-b01d-c8e7ba3a4c55" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1.txt" afterPath="$PROJECT_DIR$/1.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wxModel.php" afterPath="$PROJECT_DIR$/wxModel.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,10 +73,10 @@
       <file leaf-file-name="wxModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="77" column="12" lean-forward="false" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+            <state relative-caret-position="-768">
+              <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
               <folding>
-                <marker date="1496510037736" expanded="true" signature="1967:2226" ph="..." />
+                <marker date="1496510297768" expanded="true" signature="1967:2226" ph="..." />
               </folding>
             </state>
           </provider>
@@ -268,12 +269,12 @@
       <updated>1496402843084</updated>
       <workItem from="1496402844379" duration="40000" />
       <workItem from="1496403753831" duration="6113000" />
-      <workItem from="1496486716342" duration="4537000" />
+      <workItem from="1496486716342" duration="4832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10690000" />
+    <option name="totallyTimeSpent" value="10985000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -368,7 +369,7 @@
         <state relative-caret-position="525">
           <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <marker date="1496510037736" expanded="true" signature="1967:2226" ph="..." />
+            <marker date="1496510297768" expanded="true" signature="1967:2226" ph="..." />
           </folding>
         </state>
       </provider>
@@ -430,10 +431,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wxModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="77" column="12" lean-forward="false" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+        <state relative-caret-position="-768">
+          <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
           <folding>
-            <marker date="1496510037736" expanded="true" signature="1967:2226" ph="..." />
+            <marker date="1496510297768" expanded="true" signature="1967:2226" ph="..." />
           </folding>
         </state>
       </provider>
