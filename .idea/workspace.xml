@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45088533-1da5-451a-b01d-c8e7ba3a4c55" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/test.php" afterPath="$PROJECT_DIR$/demo/test.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wx.php" afterPath="$PROJECT_DIR$/wx.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wxModel.php" afterPath="$PROJECT_DIR$/wxModel.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,10 +72,10 @@
       <file leaf-file-name="wxModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="177">
+              <caret line="77" column="12" lean-forward="false" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
               <folding>
-                <marker date="1496509681498" expanded="true" signature="1967:2226" ph="..." />
+                <marker date="1496510037736" expanded="true" signature="1967:2226" ph="..." />
               </folding>
             </state>
           </provider>
@@ -271,12 +268,12 @@
       <updated>1496402843084</updated>
       <workItem from="1496402844379" duration="40000" />
       <workItem from="1496403753831" duration="6113000" />
-      <workItem from="1496486716342" duration="4232000" />
+      <workItem from="1496486716342" duration="4537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10385000" />
+    <option name="totallyTimeSpent" value="10690000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -371,7 +368,7 @@
         <state relative-caret-position="525">
           <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <marker date="1496509681498" expanded="true" signature="1967:2226" ph="..." />
+            <marker date="1496510037736" expanded="true" signature="1967:2226" ph="..." />
           </folding>
         </state>
       </provider>
@@ -433,10 +430,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wxModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="177">
+          <caret line="77" column="12" lean-forward="false" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
           <folding>
-            <marker date="1496509681498" expanded="true" signature="1967:2226" ph="..." />
+            <marker date="1496510037736" expanded="true" signature="1967:2226" ph="..." />
           </folding>
         </state>
       </provider>

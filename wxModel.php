@@ -75,11 +75,7 @@ class wxModel
             //返回一个拼接好的xml的字符串
             $resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $content);
 
-
-        }else{
-                	echo "Input something...";
-                }
-
+            
         }else {
         	echo "";
         	exit;
