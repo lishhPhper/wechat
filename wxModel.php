@@ -20,7 +20,7 @@ class wxModel
     {
         $data = ['time'=>date('Y-m-d H:i:s',time()),'str'=>$str];
         //微信服务器发送的消息都将在1.txt里
-        file_put_contents('./1.txt', json_encode($data)."\r\n",FILE_APPEND);
+        file_put_contents('../tmp/1.txt', json_encode($data)."\r\n",FILE_APPEND);
     }
 
     public function responseMsg()
