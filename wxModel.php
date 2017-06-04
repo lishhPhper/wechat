@@ -129,7 +129,30 @@ EOT;
                     }
                 }
 
+                if($msgtype == 'event')
+                {
+                    $event = $postObj->Event;
 
+                    if($event == 'subscribe')
+                    {
+                        $textTpl = "<xml>
+                            <ToUserName><![CDATA[%s]]></ToUserName>
+                            <FromUserName><![CDATA[%s]]></FromUserName>
+                            <CreateTime>%s</CreateTime>
+                            <MsgType><![CDATA[%s]]></MsgType>
+                            <Content><![CDATA[%s]]></Content>
+                            <FuncFlag>0</FuncFlag>
+                            </xml>";
+
+                        $time = time();
+                        $msgtype = 'text';
+                        $content = "欢迎来到骚黎的福利空间，发送'福利'取得图片";
+
+                        $resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $content);
+                        echo $resStr;
+
+                    }
+                }
                 $time = time();
                 $msgtype = $postObj->MsgType;
                 $content = "欢迎来到风骚705空间__小黎子开发空间";
