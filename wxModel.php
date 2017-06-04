@@ -108,6 +108,10 @@ EOT;
                         $resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $nums);
                         echo $resStr;
                     }
+                    if($keyword == '福利')
+                    {
+
+                    }
                 }
 
 

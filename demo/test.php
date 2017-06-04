@@ -59,11 +59,13 @@ $textTpl = <<<EOT
 <FromUserName><![CDATA[%s]]></FromUserName>
 <CreateTime>%s</CreateTime>
 <MsgType><![CDATA[%s]]></MsgType>
-<ArticleCount>%s</ArticleCount>
-<Articles>
+<Image>
+<MediaId><![CDATA[$s]]></MediaId>
+</Image>
+</xml>
 EOT;
 
-$str = '';
+/*$str = '';
 foreach( $arr as $v )
 {
     $str .= "<item>";
@@ -73,16 +75,15 @@ foreach( $arr as $v )
     $str .= "<Url><![CDATA[".$v['url']."]></Url>";
     $str .= "</item>";
 }
-
 $textTpl .= $str;
-$textTpl .= "</Articles></xml>";
+$textTpl .= "</Articles></xml>";*/
+
 $time = time();
-$msgtype = 'text';
-$msgtype = 'news';
+$msgtype = 'image';
 $nums = count($arr);
 $content = "欢迎来到风骚705空间__小黎子开发空间";
-
+$mediaid =
 $resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $nums);
 
-file_put_contents('../../1.txt',$resStr);
+//file_put_contents('../../1.txt',$resStr);
 var_dump($resStr);
