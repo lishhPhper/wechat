@@ -40,7 +40,7 @@ class wxModel
                    the best way is to check the validity of xml by yourself */
                 libxml_disable_entity_loader(true);
                 // 接收到微信服务器发送过来的数据，分为：事件、消息，按照MsgType分
-              	$postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);
+                $postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);
 
                 $tousername = $postObj->ToUserName;
                 $fromusername = $postObj->FromUserName;
@@ -77,36 +77,35 @@ class wxModel
                             )
                         );
                         $textTpl = <<<EOT
-                            <xml>
-                            <ToUserName><![CDATA[%s]]></ToUserName>
-                            <FromUserName><![CDATA[%s]]></FromUserName>
-                            <CreateTime>%s</CreateTime>
-                            <MsgType><![CDATA[%s]]></MsgType>
-                            <ArticleCount>%s</ArticleCount>
-                            <Articles>
+                                <xml>
+                                <ToUserName><![CDATA[%s]]></ToUserName>
+                                <FromUserName><![CDATA[%s]]></FromUserName>
+                                <CreateTime>%s</CreateTime>
+                                <MsgType><![CDATA[%s]]></MsgType>
+                                <ArticleCount>%s</ArticleCount>
+                                <Articles>
 EOT;
 
-                        $str = '';
-                        foreach( $arr as $v )
-                        {
+                        $str = "";
+                        foreach ($arr as $v) {
                             $str .= "<item>";
-                            $str .= "<Title><![CDATA[".$v['title']."]]></Title>";
-                            $str .= "<Description><![CDATA[".$v['description']."]]></Description>";
-                            $str .= "<PicUrl><![CDATA[".$v['picUrl']."]]></PicUrl>";
-                            $str .= "<Url><![CDATA[".$v['url']."]></Url>";
+                            $str .= "<Title><![CDATA[" . $v['title'] . "]]></Title>";
+                            $str .= "<Description><![CDATA[" . $v['description'] . "]]></Description>";
+                            $str .= "<PicUrl><![CDATA[" . $v['picUrl'] . "]]></PicUrl>";
+                            $str .= "<Url><![CDATA[" . $v['url'] . "]]></Url>";
                             $str .= "</item>";
                         }
 
                         $textTpl .= $str;
                         $textTpl .= "</Articles></xml>";
 
-
                         $time = time();
                         $msgtype = 'news';
                         $nums = count($arr);
 
-                        $resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $nums);
-                        echo $resStr;
+                        // Return a formatted string
+                        $retStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $nums);
+                        echo $retStr;
                     }
                 }
 
