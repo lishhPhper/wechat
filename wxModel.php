@@ -77,15 +77,14 @@ class wxModel
                             )
                         );
                         $textTpl = <<<EOT
-                            <xml>
-                            <ToUserName><![CDATA[%s]]></ToUserName>
-                            <FromUserName><![CDATA[%s]]></FromUserName>
-                            <CreateTime>%s</CreateTime>
-                            <MsgType><![CDATA[%s]]></MsgType>
-                            <ArticleCount>%s</ArticleCount>
-                            <Articles>
+                                <xml>
+                                <ToUserName><![CDATA[%s]]></ToUserName>
+                                <FromUserName><![CDATA[%s]]></FromUserName>
+                                <CreateTime>%s</CreateTime>
+                                <MsgType><![CDATA[%s]]></MsgType>
+                                <ArticleCount>%s</ArticleCount>
+                                <Articles>
 EOT;
-
                         $str = '';
                         foreach( $arr as $v )
                         {
