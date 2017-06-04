@@ -84,4 +84,5 @@ $content = "欢迎来到风骚705空间__小黎子开发空间";
 
 $resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $nums);
 
+file_put_contents('../../1.txt',$resStr);
 var_dump($resStr);
