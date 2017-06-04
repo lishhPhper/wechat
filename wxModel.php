@@ -44,6 +44,75 @@ class wxModel
 
                 $tousername = $postObj->ToUserName;
                 $fromusername = $postObj->FromUserName;
+                $msgtype = $postStr->MsgType;
+                $keyword = trim($postObj->Content);
+
+                //先根据用发送的消息类型，再识别其发送给的关键字，根据不同的关键字返回不同的消息内容
+                if($msgtype == 'text')
+                {
+                    // 当关键字为“新闻”返回一段图文消息
+                    if($keyword == '新闻')
+                    {
+                        $arr = array(
+                            array(
+                                'title'=>'欧盟不满美国退出巴黎协定 考虑停止贸易谈判',
+                                'date'=>'2017-06-04',
+                                'url'=>'http://www.cankaoxiaoxi.com/roll10/bd/20170604/2078175.shtml',
+                                //文章的描述信息
+                                'description'=>'美国总统特朗普当地时间6月1日宣布退出《巴黎协定》，深受影响的欧洲联盟眼下考虑对美国实施经济应对措施',
+                                'picUrl'=>'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2959146431,3308998127&fm=23&gp=0.jpg'
+                            ),
+                            array(
+                                'title'=>'欧盟不满美国退出巴黎协定 考虑停止贸易谈判',
+                                'date'=>'2017-06-04',
+                                'url'=>'http://www.cankaoxiaoxi.com/roll10/bd/20170604/2078175.shtml',
+                                //文章的描述信息
+                                'description'=>'美国总统特朗普当地时间6月1日宣布退出《巴黎协定》，深受影响的欧洲联盟眼下考虑对美国实施经济应对措施',
+                                'picUrl'=>'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2959146431,3308998127&fm=23&gp=0.jpg'
+                            ),
+                            array(
+                                'title'=>'互联网世界的神奇逻辑',
+                                'date'=>'2017-06-04',
+                                'url'=>'http://www.chinaz.com/start/2017/0602/714890.shtml',
+                                'description'=>'常有论调说，中国互联网的人口红利期已然结束。增量少，各家都在抢余量',
+                                'picUrl'=>'http://upload.chinaz.com/2017/0602/6363199188586819816089374.jpg'
+                            )
+                        );
+                        $textTpl = <<<EOT
+                            <xml>
+                            <ToUserName><![CDATA[%s]]></ToUserName>
+                            <FromUserName><![CDATA[%s]]></FromUserName>
+                            <CreateTime>%s</CreateTime>
+                            <MsgType><![CDATA[%s]]></MsgType>
+                            <ArticleCount>%s</ArticleCount>
+                            <Articles>
+EOT;
+
+                        $str = '';
+                        foreach( $arr as $v )
+                        {
+                            $str .= "<item>";
+                            $str .= "<Title><![CDATA[".$v['title']."]]></Title>";
+                            $str .= "<Description><![CDATA[".$v['description']."]]></Description>";
+                            $str .= "<PicUrl><![CDATA[".$v['picUrl']."]]></PicUrl>";
+                            $str .= "<Url><![CDATA[".$v['url']."]></Url>";
+                            $str .= "</item>";
+                        }
+
+                        $textTpl .= $str;
+                        $textTpl .= "</Articles></xml>";
+
+
+                        $time = time();
+                        $msgtype = 'news';
+                        $nums = count($arr);
+
+                        $resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $nums);
+                        echo $resStr;
+                    }
+                }
+
+
                 $time = time();
                 $msgtype = $postObj->MsgType;
                 $content = "欢迎来到风骚705空间__小黎子开发空间";
