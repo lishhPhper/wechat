@@ -220,6 +220,60 @@ EOT;
 			return false;
 		}
 	}
+
+	//curl请求，获取返回的数据
+	public function getCurlData($url)
+    {
+        $ch = curl_init();
+
+        // 2. 设置cURL选项
+        /*
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        */
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+
+        // 3. 执行cURL请求
+        $ret = curl_exec($ch);
+
+        // 4. 关闭资源
+        curl_close($ch);
+
+        return $ret;
+
+    }
+
+    //将json数据转化为数组
+    public function jsonToArray($json)
+    {
+        $arr = json_decode($json,true);
+        return $arr;
+    }
+
+    //将access_token值放到session里，不重复请求（每天限制2000）；
+	public function getAccessToken()
+    {
+        session_start();
+
+        if( $_SESSION['access_token'] && (time()-$_SESSION['expire_time']) <7000 )
+        {
+            return $_SESSION['access_token'];
+        } else {
+            $appid = "wx4798240534cc014b";
+            $appsecret = "60619753f72d3dcdd704e48c5aa589db";
+
+            $url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=".$appid."&secret=".$appsecret;
+            $access_token = $this->jsonToArray($this->getCurlData($url))['access_token'];
+
+            $_SESSION['access_token'] = $access_token;
+            $_SESSION['expire_time'] = time();
+
+            return $access_token;
+        }
+    }
 }
 
 ?>
