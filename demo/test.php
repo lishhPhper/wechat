@@ -28,7 +28,7 @@ $msgid = $postObj->MsgId;
 
 // 消息应该是结合数据库拿到数据信息，实现实时的动态消息
 //模拟文章列表数据
-$arr = array(
+/*$arr = array(
     array(
         'title'=>'欧盟不满美国退出巴黎协定 考虑停止贸易谈判',
         'date'=>'2017-06-04',
@@ -52,7 +52,7 @@ $arr = array(
         'description'=>'常有论调说，中国互联网的人口红利期已然结束。增量少，各家都在抢余量',
         'picUrl'=>'http://upload.chinaz.com/2017/0602/6363199188586819816089374.jpg'
     )
-);
+);*/
 $textTpl = <<<EOT
 <xml>
 <ToUserName><![CDATA[%s]]></ToUserName>
@@ -60,7 +60,7 @@ $textTpl = <<<EOT
 <CreateTime>%s</CreateTime>
 <MsgType><![CDATA[%s]]></MsgType>
 <Image>
-<MediaId><![CDATA[$s]]></MediaId>
+<MediaId><![CDATA[%s]]></MediaId>
 </Image>
 </xml>
 EOT;
@@ -82,8 +82,8 @@ $time = time();
 $msgtype = 'image';
 $nums = count($arr);
 $content = "欢迎来到风骚705空间__小黎子开发空间";
-$mediaid =
-$resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $nums);
+$mediaid = "Whl7tAFVhyWFOAL9ctiStnM5A1W_ZE-IRvgKKxXzIw1G6R_xYbj_Nmgn2aNRMbZd";
+$resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $mediaid);
 
-//file_put_contents('../../1.txt',$resStr);
+file_put_contents('../../1.txt',$resStr);
 var_dump($resStr);

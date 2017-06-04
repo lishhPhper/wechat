@@ -110,7 +110,22 @@ EOT;
                     }
                     if($keyword == '福利')
                     {
-
+                        $textTpl = <<<EOT
+                            <xml>
+                            <ToUserName><![CDATA[%s]]></ToUserName>
+                            <FromUserName><![CDATA[%s]]></FromUserName>
+                            <CreateTime>%s</CreateTime>
+                            <MsgType><![CDATA[%s]]></MsgType>
+                            <Image>
+                            <MediaId><![CDATA[%s]]></MediaId>
+                            </Image>
+                            </xml>
+EOT;
+                        $time = time();
+                        $msgtype = 'image';
+                        $mediaid = "Whl7tAFVhyWFOAL9ctiStnM5A1W_ZE-IRvgKKxXzIw1G6R_xYbj_Nmgn2aNRMbZd";
+                        $resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $mediaid);
+                        echo $resStr;
                     }
                 }
 
