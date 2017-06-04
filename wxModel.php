@@ -44,7 +44,7 @@ class wxModel
 
                 $tousername = $postObj->ToUserName;
                 $fromusername = $postObj->FromUserName;
-                $msgtype = $postStr->MsgType;
+                $msgtype = $postObj->MsgType;
                 $keyword = trim($postObj->Content);
 
                 //先根据用发送的消息类型，再识别其发送给的关键字，根据不同的关键字返回不同的消息内容

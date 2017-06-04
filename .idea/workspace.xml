@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45088533-1da5-451a-b01d-c8e7ba3a4c55" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/test.php" afterPath="$PROJECT_DIR$/demo/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wxModel.php" afterPath="$PROJECT_DIR$/wxModel.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,17 +76,17 @@
       <file leaf-file-name="wxModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="116" column="45" lean-forward="true" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
+            <state relative-caret-position="66">
+              <caret line="47" column="50" lean-forward="false" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
               <folding>
                 <element signature="e#1763#2304#1#PHP" expanded="false" />
                 <element signature="e#2334#2875#1#PHP" expanded="false" />
                 <element signature="e#2905#3336#1#PHP" expanded="false" />
-                <marker date="1496565447446" expanded="false" signature="3438:3795" ph="..." />
-                <marker date="1496565447446" expanded="true" signature="3438:4011" ph="..." />
-                <marker date="1496565447446" expanded="true" signature="3795:4011" ph="..." />
-                <marker date="1496565447446" expanded="true" signature="3952:4011" ph="..." />
-                <marker date="1496565447446" expanded="true" signature="5382:5641" ph="..." />
+                <marker date="1496565873586" expanded="true" signature="3438:3795" ph="..." />
+                <marker date="1496565873586" expanded="true" signature="3438:4011" ph="..." />
+                <marker date="1496565873586" expanded="true" signature="3795:4011" ph="..." />
+                <marker date="1496565873586" expanded="true" signature="3952:4011" ph="..." />
+                <marker date="1496565873586" expanded="true" signature="5382:5641" ph="..." />
               </folding>
             </state>
           </provider>
@@ -285,12 +283,12 @@
       <workItem from="1496402844379" duration="40000" />
       <workItem from="1496403753831" duration="6113000" />
       <workItem from="1496486716342" duration="5525000" />
-      <workItem from="1496552968122" duration="4863000" />
+      <workItem from="1496552968122" duration="5245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16541000" />
+    <option name="totallyTimeSpent" value="16923000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,8 +335,13 @@
           <url>file://$PROJECT_DIR$/../wechat-master/wechat-master/wxModel.php</url>
           <line>30</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/wxModel.php</url>
+          <line>56</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -400,11 +403,11 @@
             <element signature="e#1763#2304#1#PHP" expanded="false" />
             <element signature="e#2334#2875#1#PHP" expanded="false" />
             <element signature="e#2905#3336#1#PHP" expanded="false" />
-            <marker date="1496565447446" expanded="false" signature="3438:3795" ph="..." />
-            <marker date="1496565447446" expanded="true" signature="3438:4011" ph="..." />
-            <marker date="1496565447446" expanded="true" signature="3795:4011" ph="..." />
-            <marker date="1496565447446" expanded="true" signature="3952:4011" ph="..." />
-            <marker date="1496565447446" expanded="true" signature="5382:5641" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="3438:3795" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="3438:4011" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="3795:4011" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="3952:4011" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="5382:5641" ph="..." />
           </folding>
         </state>
       </provider>
@@ -458,11 +461,11 @@
             <element signature="e#1763#2304#1#PHP" expanded="false" />
             <element signature="e#2334#2875#1#PHP" expanded="false" />
             <element signature="e#2905#3336#1#PHP" expanded="false" />
-            <marker date="1496565447446" expanded="false" signature="3438:3795" ph="..." />
-            <marker date="1496565447446" expanded="true" signature="3438:4011" ph="..." />
-            <marker date="1496565447446" expanded="true" signature="3795:4011" ph="..." />
-            <marker date="1496565447446" expanded="true" signature="3952:4011" ph="..." />
-            <marker date="1496565447446" expanded="true" signature="5382:5641" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="3438:3795" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="3438:4011" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="3795:4011" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="3952:4011" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="5382:5641" ph="..." />
           </folding>
         </state>
       </provider>
@@ -528,17 +531,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wxModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="116" column="45" lean-forward="true" selection-start-line="116" selection-start-column="45" selection-end-line="116" selection-end-column="45" />
+        <state relative-caret-position="66">
+          <caret line="47" column="50" lean-forward="false" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
           <folding>
             <element signature="e#1763#2304#1#PHP" expanded="false" />
             <element signature="e#2334#2875#1#PHP" expanded="false" />
             <element signature="e#2905#3336#1#PHP" expanded="false" />
-            <marker date="1496565447446" expanded="false" signature="3438:3795" ph="..." />
-            <marker date="1496565447446" expanded="true" signature="3438:4011" ph="..." />
-            <marker date="1496565447446" expanded="true" signature="3795:4011" ph="..." />
-            <marker date="1496565447446" expanded="true" signature="3952:4011" ph="..." />
-            <marker date="1496565447446" expanded="true" signature="5382:5641" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="3438:3795" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="3438:4011" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="3795:4011" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="3952:4011" ph="..." />
+            <marker date="1496565873586" expanded="true" signature="5382:5641" ph="..." />
           </folding>
         </state>
       </provider>
