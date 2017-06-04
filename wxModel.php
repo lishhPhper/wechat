@@ -60,7 +60,7 @@ class wxModel
                                 'url'=>'http://www.cankaoxiaoxi.com/roll10/bd/20170604/2078175.shtml',
                                 //文章的描述信息
                                 'description'=>'美国总统特朗普当地时间6月1日宣布退出《巴黎协定》，深受影响的欧洲联盟眼下考虑对美国实施经济应对措施',
-                                'picUrl'=>'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2959146431,3308998127&fm=23&gp=0.jpg'
+                                'picUrl'=>'http://upload.chinaz.com/2017/0603/6363210883952321635316200.jpeg'
                             ),
                             array(
                                 'title'=>'欧盟不满美国退出巴黎协定 考虑停止贸易谈判',
@@ -68,7 +68,7 @@ class wxModel
                                 'url'=>'http://www.cankaoxiaoxi.com/roll10/bd/20170604/2078175.shtml',
                                 //文章的描述信息
                                 'description'=>'美国总统特朗普当地时间6月1日宣布退出《巴黎协定》，深受影响的欧洲联盟眼下考虑对美国实施经济应对措施',
-                                'picUrl'=>'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2959146431,3308998127&fm=23&gp=0.jpg'
+                                'picUrl'=>'http://upload.chinaz.com/2017/0603/6363210883952321635316200.jpeg'
                             ),
                             array(
                                 'title'=>'互联网世界的神奇逻辑',
