@@ -51,29 +51,29 @@ class wxModel
                 if($msgtype == 'text')
                 {
                     // 当关键字为“新闻”返回一段图文消息
-                    if($keyword == '新闻')
+                    if($keyword == "新闻")
                     {
                         $arr = array(
                             array(
-                                'title'=>'欧盟不满美国退出巴黎协定 考虑停止贸易谈判',
-                                'date'=>'2017-06-04',
-                                'url'=>'http://www.chinaz.com/news/2017/0603/716624.shtml',
-                                'description'=>'美国总统特朗普当地时间6月1日宣布退出《巴黎协定》',
-                                'picUrl'=>'http://upload.chinaz.com/2017/0603/6363210883952321635316200.jpeg'
+                                'title' => "套路太深！唯品会对清空微博作出解释 网友：这广告6到飞",
+                                'date' => "2017-6-2",
+                                'url' => "http://www.chinaz.com/news/quka/2017/0602/715449.shtml",
+                                'description' => '日前，唯品会清空了官方微博，成功的引起了众人的注意。',
+                                'picUrl' => "http://upload.chinaz.com/2017/0602/6363201407728157524057839.jpeg"
                             ),
                             array(
-                                'title'=>'欧盟不满美国退出巴黎协定 考虑停止贸易谈判',
-                                'date'=>'2017-06-04',
-                                'url'=>'http://www.chinaz.com/news/2017/0603/716624.shtml',
-                                'description'=>'美国总统特朗普当地时间6月1日宣布退出《巴黎协定》',
-                                'picUrl'=>'http://upload.chinaz.com/2017/0603/6363210883952321635316200.jpeg'
+                                'title' => "刘强东章泽天向中国人民大学捐赠3亿 设人大京东基金",
+                                'date' => "2017-6-2",
+                                'url' => "http://www.chinaz.com/news/2017/0602/715434.shtml",
+                                'description' => '京东集团创始人、董事局主席兼首席执行官及京东集团今天下午在中国人民大学宣布',
+                                'picUrl' => "http://upload.chinaz.com/2017/0602/6363201407728157524057839.jpeg"
                             ),
                             array(
-                                'title'=>'互联网世界的神奇逻辑',
-                                'date'=>'2017-06-04',
-                                'url'=>'http://www.chinaz.com/start/2017/0602/714890.shtml',
-                                'description'=>'常有论调说，中国互联网的人口红利期已然结束。增量少，各家都在抢余量',
-                                'picUrl'=>'http://upload.chinaz.com/2017/0602/6363199188586819816089374.jpg'
+                                'title' => "高通发布 QC 4+ 快充技术，让努比亚 Z17 当了一次“业界领先”",
+                                'date' => "2017-6-2",
+                                'url' => "http://www.chinaz.com/mobile/2017/0602/715429.shtml",
+                                'description' => '充电 5 分钟，通话 2 小时这句广告词',
+                                'picUrl' => "http://upload.chinaz.com/2017/0602/6363201407728157524057839.jpeg"
                             )
                         );
                         $textTpl = <<<EOT
