@@ -86,13 +86,12 @@ class wxModel
                                 <Articles>
 EOT;
                         $str = '';
-                        foreach( $arr as $v )
-                        {
+                        foreach ($arr as $v) {
                             $str .= "<item>";
-                            $str .= "<Title><![CDATA[".$v['title']."]]></Title>";
-                            $str .= "<Description><![CDATA[".$v['description']."]]></Description>";
-                            $str .= "<PicUrl><![CDATA[".$v['picUrl']."]]></PicUrl>";
-                            $str .= "<Url><![CDATA[".$v['url']."]></Url>";
+                            $str .= "<Title><![CDATA[" . $v['title'] . "]]></Title>";
+                            $str .= "<Description><![CDATA[" . $v['description'] . "]]></Description>";
+                            $str .= "<PicUrl><![CDATA[" . $v['picUrl'] . "]]></PicUrl>";
+                            $str .= "<Url><![CDATA[" . $v['url'] . "]]></Url>";
                             $str .= "</item>";
                         }
 
