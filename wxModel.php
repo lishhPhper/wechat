@@ -146,9 +146,9 @@ EOT;
 
                         $time = time();
                         $msgtype = 'text';
-                        $content = "欢迎来到骚黎的福利空间，发送'福利'取得图片";
+                        $content = "欢迎来到骚黎的福利空间，发送(福利)取得图片";
 
-                        $resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $content);
+                        $retStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $content);
                         echo $resStr;
 
                     }
