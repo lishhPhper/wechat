@@ -22,7 +22,7 @@ $arr = array(
     )
 );
 $json = json_encode($arr);
-$res = $wechatObj->getCurlData($url,"POST",$jsonData);
+$res = $wechatObj->getCurlData($url,"POST",$json);
 
 echo $res;
 //dump($json);
