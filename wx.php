@@ -1,9 +1,10 @@
 <?php
 
     include './wxModel.php';
+    include './vendor/autoload.php';
     define("TOKEN", "wlforever");
     $wechatObj = new wxModel();
-    if($_SESSION['access_token']){
+    /*if(isset($_SESSION['access_token'])){
         $access_token = $_SESSION['access_token'];
     } else {
         $access_token = $wechatObj->getAccessToken();
@@ -32,16 +33,17 @@
             ),
             array(
                 "type" => "view",
-                "name" => "搜索" ,
-                "url" => "http://www.soso.com/"
+                "name" => "商城" ,
+                "url" => "https://kdt.im/Kok8Nr"
             )
         )
     );
-    $data = json_encode($arr);
+    // dump(json_encode($arr));
+    $data = urlencode(json_encode($arr));
 
     echo $wechatObj->createMenu($access_token,$data);
-    echo $wechatObj->getMenu($access_token);
-    if ($_GET['echostr']) {
+    echo $wechatObj->getMenu($access_token);*/
+    if (isset($_GET['echostr'])) {
         $wechatObj->valid();
     } else {
 
