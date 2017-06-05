@@ -16,7 +16,7 @@ class wxModel
         }
     }
 
-    public function content($str) 
+    public function content($str)
     {
         $data = ['time'=>date('Y-m-d H:i:s',time()),'str'=>$str];
         //微信服务器发送的消息都将在1.txt里

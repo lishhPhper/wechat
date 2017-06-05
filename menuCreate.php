@@ -29,14 +29,14 @@ $arr = array(
         ),
         array(
             "type" => "view",
-            "name" => urlencode("商城") ,
+            "name" => urlencode("商城"),
             "url" => "https://kdt.im/Kok8Nr"
         )
     )
 );
 // dump(json_encode($arr));
-$jsonData = urlencode(json_encode($arr));
-
+$jsonData = urldecode(json_encode($arr));
+dump($jsonData);
 $url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$wechatObj->getAccessToken();
 
 $res = $wechatObj->getCurlData($url,"POST",$jsonData);
