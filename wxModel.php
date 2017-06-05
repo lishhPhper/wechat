@@ -222,7 +222,7 @@ EOT;
 	}
 
 	//curl请求，获取返回的数据
-	public function getCurlData($url)
+	public function getCurlData($url,$post_data)
     {
         $ch = curl_init();
 
@@ -232,9 +232,16 @@ EOT;
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         */
-        curl_setopt($ch, CURLOPT_URL, $url);
+        /*curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);*/
+
+    　　curl_setopt($ch, CURLOPT_URL, $url);
+    　　curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    　　// post数据
+    　　curl_setopt($ch, CURLOPT_POST, 1);
+    　　// post的变量
+    　　curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
 
         // 3. 执行cURL请求
         $ret = curl_exec($ch);

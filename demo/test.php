@@ -1,4 +1,10 @@
 <?php
+
+include '../wxModel.php';
+$model = new wxModel();
+echo $model->getAccessToken();
+
+
 $postStr = <<< EOT
 <xml>
 <ToUserName><![CDATA[gh_7237c02b0548]]></ToUserName>
