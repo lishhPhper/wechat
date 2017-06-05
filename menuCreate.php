@@ -36,7 +36,7 @@ $arr = array(
 );
 // dump(json_encode($arr));
 $jsonData = urldecode(json_encode($arr));
-dump($jsonData);
+//dump($jsonData);
 $url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$wechatObj->getAccessToken();
 
 $res = $wechatObj->getCurlData($url,"POST",$jsonData);

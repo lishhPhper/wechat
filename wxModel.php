@@ -20,7 +20,7 @@ class wxModel
     {
         $data = ['time'=>date('Y-m-d H:i:s',time()),'str'=>$str];
         //微信服务器发送的消息都将在1.txt里
-        file_put_contents('../tmp/1.txt', json_encode($data)."\r\n",FILE_APPEND);
+        file_put_contents('../tmp/1.txt', json_encode($data)."\r",FILE_APPEND);
     }
 
     public function responseMsg()
@@ -125,6 +125,35 @@ EOT;
                         $msgtype = 'image';
                         $mediaid = "Whl7tAFVhyWFOAL9ctiStnM5A1W_ZE-IRvgKKxXzIw1G6R_xYbj_Nmgn2aNRMbZd";
                         $resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $mediaid);
+                        echo $resStr;
+                    }
+                    //用户发送天气+城市的消息是返回天气信息
+                    if(substr($keyword,0,6) == '天气')
+                    {
+                        $city = substr($keyword,6,strlen($keyword));
+                        $jsonStr = $this->getWeather($city);
+                        $arr = $this->jsonToArray($jsonStr);
+                        $textTpl = <<<EOT
+                            <xml>
+                            <ToUserName><![CDATA[%s]]></ToUserName>
+                            <FromUserName><![CDATA[%s]]></FromUserName>
+                            <CreateTime>%s</CreateTime>
+                            <MsgType><![CDATA[%s]]></MsgType>
+                            <Content><![CDATA[%s]]></Content>
+                            <FuncFlag>0</FuncFlag>
+                            </xml>
+EOT;
+
+                        $content = '城市:'.$arr['result']['today']['city']."\r\n";
+                        $content .= '天气:'.$arr['result']['today']['weather']."\r\n";
+                        $content .= '温度:'.$arr['result']['today']['temperature']."\r\n";
+                        $content .= '气候:'.$arr['result']['today']['dressing_index']."\r\n";
+                        $content .= '风力:'.$arr['result']['sk']['wind_direction'].$arr['result']['sk']['wind_strength'];
+
+                        $time = time();
+                        $msgtype = 'text';
+                        //返回一个拼接好的xml的字符串
+                        $resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $content);
                         echo $resStr;
                     }
                 }
@@ -358,8 +387,13 @@ EOT;
         }
     }
 
-
-
+    //获取天气信息的接口（API）
+    public function getWeather($city)
+    {
+        $appkey = "9217b9dbc0359adedb647224634b1d78";
+        $url = "http://v.juhe.cn/weather/index?format=2&cityname=".$city."&key=".$appkey;
+        return $this->getCurlData($url);
+    }
     /*public function createMenu($token,$data)
     {
         $ch = curl_init();
