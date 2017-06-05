@@ -7,7 +7,7 @@ $appsecret = "60619753f72d3dcdd704e48c5aa589db";
 /*$url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=".$appid."&secret=".$appsecret;*/
 
 $url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=ACCESS_TOKEN";
-$post_data = array ("username" => "bob","key" => "12345");
+$post_data = array ("appid" => "wx4798240534cc014b","secret" => "60619753f72d3dcdd704e48c5aa589db");
 
 
 // 1. cURL初始化
