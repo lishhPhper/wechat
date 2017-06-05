@@ -420,6 +420,13 @@ EOT;
             return file_get_contents("https://api.weixin.qq.com/cgi-bin/menu/get?access_token=".$token);
     }*/
 
+    //获取关注公众号的用户ID
+    public function getUserOpenIdList()
+    {
+        $url = "https://api.weixin.qq.com/cgi-bin/user/get?access_token=".$this->getAccessToken();
+        return $this->getCurlData($url);
+    }
+
 }
 
 ?>
