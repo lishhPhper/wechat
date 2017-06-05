@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="45088533-1da5-451a-b01d-c8e7ba3a4c55" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/getAccessToken.php" afterPath="$PROJECT_DIR$/demo/getAccessToken.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wxModel.php" afterPath="$PROJECT_DIR$/wxModel.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,8 +66,8 @@
       <file leaf-file-name="getAccessToken.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/getAccessToken.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+            <state relative-caret-position="352">
+              <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -119,16 +120,16 @@
       <file leaf-file-name="wxModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="244" column="0" lean-forward="true" selection-start-line="244" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
+            <state relative-caret-position="326">
+              <caret line="238" column="22" lean-forward="true" selection-start-line="238" selection-start-column="22" selection-end-line="238" selection-end-column="22" />
               <folding>
                 <element signature="e#1654#4551#0#PHP" expanded="false" />
                 <element signature="e#1728#3148#0#PHP" expanded="false" />
-                <marker date="1496627506731" expanded="true" signature="3224:3581" ph="..." />
-                <marker date="1496627506731" expanded="true" signature="4689:5117" ph="..." />
-                <marker date="1496627506731" expanded="true" signature="4983:5082" ph="..." />
-                <marker date="1496627506731" expanded="true" signature="5711:6117" ph="..." />
-                <marker date="1496627506731" expanded="true" signature="7049:7308" ph="..." />
+                <marker date="1496629259348" expanded="true" signature="3224:3581" ph="..." />
+                <marker date="1496629259348" expanded="true" signature="4689:5117" ph="..." />
+                <marker date="1496629259348" expanded="true" signature="4983:5082" ph="..." />
+                <marker date="1496629259348" expanded="true" signature="5711:6117" ph="..." />
+                <marker date="1496629259348" expanded="true" signature="7049:7308" ph="..." />
               </folding>
             </state>
           </provider>
@@ -160,8 +161,8 @@
         <option value="$PROJECT_DIR$/demo/curl_getAccessToken.php" />
         <option value="$PROJECT_DIR$/demo/menu_example.php" />
         <option value="$PROJECT_DIR$/demo/test.php" />
-        <option value="$PROJECT_DIR$/wxModel.php" />
         <option value="$PROJECT_DIR$/demo/getAccessToken.php" />
+        <option value="$PROJECT_DIR$/wxModel.php" />
       </list>
     </option>
   </component>
@@ -357,12 +358,12 @@
       <workItem from="1496403753831" duration="6113000" />
       <workItem from="1496486716342" duration="5525000" />
       <workItem from="1496552968122" duration="12141000" />
-      <workItem from="1496625187482" duration="2911000" />
+      <workItem from="1496625187482" duration="3802000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26730000" />
+    <option name="totallyTimeSpent" value="27621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,11 +478,11 @@
           <folding>
             <element signature="e#1654#4551#0#PHP" expanded="false" />
             <element signature="e#1728#3148#0#PHP" expanded="false" />
-            <marker date="1496627506731" expanded="true" signature="3224:3581" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="4689:5117" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="4983:5082" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="5711:6117" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="7049:7308" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="3224:3581" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="4689:5117" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="4983:5082" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="5711:6117" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="7049:7308" ph="..." />
           </folding>
         </state>
       </provider>
@@ -546,11 +547,11 @@
           <folding>
             <element signature="e#1654#4551#0#PHP" expanded="false" />
             <element signature="e#1728#3148#0#PHP" expanded="false" />
-            <marker date="1496627506731" expanded="true" signature="3224:3581" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="4689:5117" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="4983:5082" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="5711:6117" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="7049:7308" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="3224:3581" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="4689:5117" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="4983:5082" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="5711:6117" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="7049:7308" ph="..." />
           </folding>
         </state>
       </provider>
@@ -599,11 +600,11 @@
           <folding>
             <element signature="e#1654#4551#0#PHP" expanded="false" />
             <element signature="e#1728#3148#0#PHP" expanded="false" />
-            <marker date="1496627506731" expanded="true" signature="3224:3581" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="4689:5117" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="4983:5082" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="5711:6117" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="7049:7308" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="3224:3581" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="4689:5117" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="4983:5082" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="5711:6117" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="7049:7308" ph="..." />
           </folding>
         </state>
       </provider>
@@ -737,24 +738,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wxModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="244" column="0" lean-forward="true" selection-start-line="244" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
+        <state relative-caret-position="326">
+          <caret line="238" column="22" lean-forward="true" selection-start-line="238" selection-start-column="22" selection-end-line="238" selection-end-column="22" />
           <folding>
             <element signature="e#1654#4551#0#PHP" expanded="false" />
             <element signature="e#1728#3148#0#PHP" expanded="false" />
-            <marker date="1496627506731" expanded="true" signature="3224:3581" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="4689:5117" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="4983:5082" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="5711:6117" ph="..." />
-            <marker date="1496627506731" expanded="true" signature="7049:7308" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="3224:3581" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="4689:5117" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="4983:5082" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="5711:6117" ph="..." />
+            <marker date="1496629259348" expanded="true" signature="7049:7308" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/getAccessToken.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+        <state relative-caret-position="352">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding />
         </state>
       </provider>
