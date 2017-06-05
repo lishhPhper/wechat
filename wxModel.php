@@ -154,7 +154,8 @@ EOT;
                     }
                     if($event == 'CLICK')
                     {
-                        if($key == 'welfare'){
+                        if($key == 'welfare')
+                        {
                             $textTpl = <<<EOT
                             <xml>
                             <ToUserName><![CDATA[%s]]></ToUserName>
@@ -170,6 +171,63 @@ EOT;
                             $msgtype = 'image';
                             $mediaid = "Whl7tAFVhyWFOAL9ctiStnM5A1W_ZE-IRvgKKxXzIw1G6R_xYbj_Nmgn2aNRMbZd";
                             $resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $mediaid);
+                            echo $resStr;
+                        }
+                        if($key == 'news_zero')
+                        {
+                            $arr = array(
+                                array(
+                                    'title'=>'欧盟不满美国退出巴黎协定 考虑停止贸易谈判',
+                                    'date'=>'2017-06-04',
+                                    'url'=>'http://www.chinaz.com/news/2017/0603/716624.shtml',
+                                    'description'=>'美国总统特朗普当地时间6月1日宣布退出《巴黎协定》',
+                                    'picUrl'=>'http://upload.chinaz.com/2017/0603/6363210883952321635316200.jpeg'
+                                ),
+                                array(
+                                    'title'=>'欧盟不满美国退出巴黎协定 考虑停止贸易谈判',
+                                    'date'=>'2017-06-04',
+                                    'url'=>'http://www.chinaz.com/news/2017/0603/716624.shtml',
+                                    'description'=>'美国总统特朗普当地时间6月1日宣布退出《巴黎协定》',
+                                    'picUrl'=>'http://upload.chinaz.com/2017/0603/6363210883952321635316200.jpeg'
+                                ),
+                                array(
+                                    'title'=>'互联网世界的神奇逻辑',
+                                    'date'=>'2017-06-04',
+                                    'url'=>'http://www.chinaz.com/start/2017/0602/714890.shtml',
+                                    'description'=>'常有论调说，中国互联网的人口红利期已然结束。增量少，各家都在抢余量',
+                                    'picUrl'=>'http://upload.chinaz.com/2017/0602/6363199188586819816089374.jpg'
+                                )
+                            );
+                            $textTpl = <<<EOT
+                            <xml>
+                            <ToUserName><![CDATA[%s]]></ToUserName>
+                            <FromUserName><![CDATA[%s]]></FromUserName>
+                            <CreateTime>%s</CreateTime>
+                            <MsgType><![CDATA[%s]]></MsgType>
+                            <ArticleCount>%s</ArticleCount>
+                            <Articles>
+EOT;
+                            $str = '';
+                            foreach($arr as $v)
+                            {
+                                $str .= "<item>";
+                                $str .= "<Title><![CDATA[".$v['title']."]]></Title>";
+                                $str .= "<Description><![CDATA[".$v['description']."]]></Description>";
+                                $str .= "<PicUrl><![CDATA[".$v['picUrl']."]]></PicUrl>";
+                                $str .= "<Url><![CDATA[".$v['url']."]]></Url>";
+                                $str .= "</item>";
+                            }
+
+
+                            $textTpl .= $str;
+                            $textTpl .= "</Articles></xml>";
+
+
+                            $time = time();
+                            $msgtype = 'news';
+                            $nums = count($arr);
+
+                            $resStr = sprintf($textTpl, $fromusername, $tousername, $time, $msgtype, $nums);
                             echo $resStr;
                         }
                     }
