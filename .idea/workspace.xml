@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45088533-1da5-451a-b01d-c8e7ba3a4c55" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/test.php" afterPath="$PROJECT_DIR$/demo/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wx.php" afterPath="$PROJECT_DIR$/wx.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wxModel.php" afterPath="$PROJECT_DIR$/wxModel.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,22 +92,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wx.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="wx.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wx.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
-                <element signature="e#163#952#0#PHP" expanded="false" />
+                <element signature="e#272#1061#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wxModel.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wxModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wxModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-598">
+            <state relative-caret-position="-595">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="n#valid#0;n#wxModel#0;n#!!top" expanded="false" />
@@ -120,7 +119,6 @@
                 <element signature="n#getCurlData#0;n#wxModel#0;n#!!top" expanded="false" />
                 <element signature="n#jsonToArray#0;n#wxModel#0;n#!!top" expanded="false" />
                 <element signature="n#getAccessToken#0;n#wxModel#0;n#!!top" expanded="false" />
-                <element signature="n#getMenu#0;n#wxModel#0;n#!!top" expanded="false" />
                 <marker date="1496631688571" expanded="true" signature="3224:3581" ph="..." />
                 <marker date="1496631688571" expanded="true" signature="4689:5117" ph="..." />
                 <marker date="1496631688571" expanded="true" signature="4983:5082" ph="..." />
@@ -342,12 +340,12 @@
       <workItem from="1496403753831" duration="6113000" />
       <workItem from="1496486716342" duration="5525000" />
       <workItem from="1496552968122" duration="12141000" />
-      <workItem from="1496625187482" duration="6127000" />
+      <workItem from="1496625187482" duration="6913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29946000" />
+    <option name="totallyTimeSpent" value="30732000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -494,7 +492,6 @@
             <element signature="n#getCurlData#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#jsonToArray#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getAccessToken#0;n#wxModel#0;n#!!top" expanded="false" />
-            <element signature="n#getMenu#0;n#wxModel#0;n#!!top" expanded="false" />
             <marker date="1496631688571" expanded="true" signature="3224:3581" ph="..." />
             <marker date="1496631688571" expanded="true" signature="4689:5117" ph="..." />
             <marker date="1496631688571" expanded="true" signature="4983:5082" ph="..." />
@@ -576,7 +573,6 @@
             <element signature="n#getCurlData#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#jsonToArray#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getAccessToken#0;n#wxModel#0;n#!!top" expanded="false" />
-            <element signature="n#getMenu#0;n#wxModel#0;n#!!top" expanded="false" />
             <marker date="1496631688571" expanded="true" signature="3224:3581" ph="..." />
             <marker date="1496631688571" expanded="true" signature="4689:5117" ph="..." />
             <marker date="1496631688571" expanded="true" signature="4983:5082" ph="..." />
@@ -642,7 +638,6 @@
             <element signature="n#getCurlData#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#jsonToArray#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getAccessToken#0;n#wxModel#0;n#!!top" expanded="false" />
-            <element signature="n#getMenu#0;n#wxModel#0;n#!!top" expanded="false" />
             <marker date="1496631688571" expanded="true" signature="3224:3581" ph="..." />
             <marker date="1496631688571" expanded="true" signature="4689:5117" ph="..." />
             <marker date="1496631688571" expanded="true" signature="4983:5082" ph="..." />
@@ -784,19 +779,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wx.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#163#952#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-598">
+        <state relative-caret-position="-595">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#valid#0;n#wxModel#0;n#!!top" expanded="false" />
@@ -808,12 +793,21 @@
             <element signature="n#getCurlData#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#jsonToArray#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getAccessToken#0;n#wxModel#0;n#!!top" expanded="false" />
-            <element signature="n#getMenu#0;n#wxModel#0;n#!!top" expanded="false" />
             <marker date="1496631688571" expanded="true" signature="3224:3581" ph="..." />
             <marker date="1496631688571" expanded="true" signature="4689:5117" ph="..." />
             <marker date="1496631688571" expanded="true" signature="4983:5082" ph="..." />
             <marker date="1496631688571" expanded="true" signature="5711:6117" ph="..." />
             <marker date="1496631688571" expanded="true" signature="7049:7308" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wx.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#272#1061#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -3,7 +3,11 @@
     include './wxModel.php';
     define("TOKEN", "wlforever");
     $wechatObj = new wxModel();
-    $access_token = $wechatObj->getAccessToken();
+    if($_SESSION['access_token']){
+        $access_token = $_SESSION['access_token'];
+    } else {
+        $access_token = $wechatObj->getAccessToken();
+    }
     $arr = array(
         "button"=>array(
             array(
