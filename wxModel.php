@@ -428,7 +428,7 @@ EOT;
     }
 
     //调用接口凭证type是媒体文件类型得到mediaId
-    public function getMediaID($filename)
+    /*public function getMediaID($filename)
     {
         $access_token = $this->getAccessToken();
         $type='image';
@@ -437,7 +437,7 @@ EOT;
         $json = json_decode($data,1);
         $res=$this->getCurlData( $url ,'post', $json);
         return $res['media_id'];
-    }
+    }*/
 
 }
 
