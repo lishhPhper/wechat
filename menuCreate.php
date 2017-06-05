@@ -9,7 +9,7 @@ $arr = array(
     "button"=>array(
         array(
             "type"=>"click",
-            "name"=>"最新新闻",
+            "name"=>urlencode("最新新闻"),
             "key"=>"news_zero"
         ),
         array(
@@ -17,19 +17,19 @@ $arr = array(
             "sub_button"=> array(
                 array(
                     "type"=>"click",
-                    "name"=>"福利",
+                    "name"=>urlencode("福利"),
                     "key"=>"welfare"
                 ),
                 array(
                     "type"=>"click",
-                    "name"=>"广告",
+                    "name"=>urlencode("广告"),
                     "key"=>"advent"
                 )
             )
         ),
         array(
             "type" => "view",
-            "name" => "商城" ,
+            "name" => urlencode("商城") ,
             "url" => "https://kdt.im/Kok8Nr"
         )
     )
