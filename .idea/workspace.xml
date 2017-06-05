@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45088533-1da5-451a-b01d-c8e7ba3a4c55" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/test.php" afterPath="$PROJECT_DIR$/demo/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wxModel.php" afterPath="$PROJECT_DIR$/wxModel.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="26" />
+            <state relative-caret-position="242">
+              <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="9" />
               <folding>
                 <element signature="e#190#867#0#PHP" expanded="false" />
                 <element signature="e#1217#1506#0#PHP" expanded="false" />
@@ -55,28 +54,29 @@
       <file leaf-file-name="wxModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wxModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="172" column="41" lean-forward="false" selection-start-line="172" selection-start-column="41" selection-end-line="172" selection-end-column="41" />
+            <state relative-caret-position="197">
+              <caret line="134" column="45" lean-forward="false" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="45" />
               <folding>
                 <element signature="n#valid#0;n#wxModel#0;n#!!top" expanded="false" />
                 <element signature="n#content#0;n#wxModel#0;n#!!top" expanded="false" />
                 <element signature="e#1654#4551#0#PHP" expanded="false" />
                 <element signature="e#1728#3148#0#PHP" expanded="false" />
-                <element signature="e#5623#6435#0#PHP" expanded="false" />
-                <element signature="e#6586#7058#0#PHP" expanded="false" />
+                <element signature="e#4572#5478#0#PHP" expanded="false" />
+                <element signature="e#5669#6481#0#PHP" expanded="false" />
+                <element signature="e#6632#7104#0#PHP" expanded="false" />
                 <element signature="n#checkSignature#0;n#wxModel#0;n#!!top" expanded="false" />
                 <element signature="n#getCurlData#0;n#wxModel#0;n#!!top" expanded="false" />
                 <element signature="n#jsonToArray#0;n#wxModel#0;n#!!top" expanded="false" />
                 <element signature="n#getAccessToken#0;n#wxModel#0;n#!!top" expanded="false" />
                 <element signature="n#createMenu#0;n#wxModel#0;n#!!top" expanded="false" />
                 <element signature="n#getMenu#0;n#wxModel#0;n#!!top" expanded="false" />
-                <marker date="1496633557219" expanded="true" signature="3224:3581" ph="..." />
-                <marker date="1496633557219" expanded="false" signature="4689:5117" ph="..." />
-                <marker date="1496633557219" expanded="true" signature="4983:5082" ph="..." />
-                <marker date="1496633557219" expanded="true" signature="5711:6117" ph="..." />
-                <marker date="1496633557219" expanded="true" signature="6625:7053" ph="..." />
-                <marker date="1496633557219" expanded="true" signature="6919:7018" ph="..." />
-                <marker date="1496633557219" expanded="true" signature="8074:8333" ph="..." />
+                <marker date="1496633747009" expanded="true" signature="3224:3581" ph="..." />
+                <marker date="1496633747009" expanded="false" signature="4689:5117" ph="..." />
+                <marker date="1496633747009" expanded="true" signature="4983:5082" ph="..." />
+                <marker date="1496633747009" expanded="true" signature="5757:6163" ph="..." />
+                <marker date="1496633747009" expanded="true" signature="6671:7099" ph="..." />
+                <marker date="1496633747009" expanded="true" signature="6965:7064" ph="..." />
+                <marker date="1496633747009" expanded="true" signature="8120:8379" ph="..." />
               </folding>
             </state>
           </provider>
@@ -351,12 +351,12 @@
       <workItem from="1496403753831" duration="6113000" />
       <workItem from="1496486716342" duration="5525000" />
       <workItem from="1496552968122" duration="12141000" />
-      <workItem from="1496625187482" duration="7605000" />
+      <workItem from="1496625187482" duration="7782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31424000" />
+    <option name="totallyTimeSpent" value="31601000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -504,21 +504,22 @@
             <element signature="n#content#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="e#1654#4551#0#PHP" expanded="false" />
             <element signature="e#1728#3148#0#PHP" expanded="false" />
-            <element signature="e#5623#6435#0#PHP" expanded="false" />
-            <element signature="e#6586#7058#0#PHP" expanded="false" />
+            <element signature="e#4572#5478#0#PHP" expanded="false" />
+            <element signature="e#5669#6481#0#PHP" expanded="false" />
+            <element signature="e#6632#7104#0#PHP" expanded="false" />
             <element signature="n#checkSignature#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getCurlData#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#jsonToArray#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getAccessToken#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#createMenu#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getMenu#0;n#wxModel#0;n#!!top" expanded="false" />
-            <marker date="1496633557219" expanded="true" signature="3224:3581" ph="..." />
-            <marker date="1496633557219" expanded="false" signature="4689:5117" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="4983:5082" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="5711:6117" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="6625:7053" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="6919:7018" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="8074:8333" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="3224:3581" ph="..." />
+            <marker date="1496633747009" expanded="false" signature="4689:5117" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="4983:5082" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="5757:6163" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="6671:7099" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="6965:7064" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="8120:8379" ph="..." />
           </folding>
         </state>
       </provider>
@@ -596,21 +597,22 @@
             <element signature="n#content#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="e#1654#4551#0#PHP" expanded="false" />
             <element signature="e#1728#3148#0#PHP" expanded="false" />
-            <element signature="e#5623#6435#0#PHP" expanded="false" />
-            <element signature="e#6586#7058#0#PHP" expanded="false" />
+            <element signature="e#4572#5478#0#PHP" expanded="false" />
+            <element signature="e#5669#6481#0#PHP" expanded="false" />
+            <element signature="e#6632#7104#0#PHP" expanded="false" />
             <element signature="n#checkSignature#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getCurlData#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#jsonToArray#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getAccessToken#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#createMenu#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getMenu#0;n#wxModel#0;n#!!top" expanded="false" />
-            <marker date="1496633557219" expanded="true" signature="3224:3581" ph="..." />
-            <marker date="1496633557219" expanded="false" signature="4689:5117" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="4983:5082" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="5711:6117" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="6625:7053" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="6919:7018" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="8074:8333" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="3224:3581" ph="..." />
+            <marker date="1496633747009" expanded="false" signature="4689:5117" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="4983:5082" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="5757:6163" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="6671:7099" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="6965:7064" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="8120:8379" ph="..." />
           </folding>
         </state>
       </provider>
@@ -672,21 +674,22 @@
             <element signature="n#content#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="e#1654#4551#0#PHP" expanded="false" />
             <element signature="e#1728#3148#0#PHP" expanded="false" />
-            <element signature="e#5623#6435#0#PHP" expanded="false" />
-            <element signature="e#6586#7058#0#PHP" expanded="false" />
+            <element signature="e#4572#5478#0#PHP" expanded="false" />
+            <element signature="e#5669#6481#0#PHP" expanded="false" />
+            <element signature="e#6632#7104#0#PHP" expanded="false" />
             <element signature="n#checkSignature#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getCurlData#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#jsonToArray#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getAccessToken#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#createMenu#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getMenu#0;n#wxModel#0;n#!!top" expanded="false" />
-            <marker date="1496633557219" expanded="true" signature="3224:3581" ph="..." />
-            <marker date="1496633557219" expanded="false" signature="4689:5117" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="4983:5082" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="5711:6117" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="6625:7053" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="6919:7018" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="8074:8333" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="3224:3581" ph="..." />
+            <marker date="1496633747009" expanded="false" signature="4689:5117" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="4983:5082" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="5757:6163" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="6671:7099" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="6965:7064" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="8120:8379" ph="..." />
           </folding>
         </state>
       </provider>
@@ -806,10 +809,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo/menu_example.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="66" column="30" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="66" selection-end-column="30" />
+          <folding>
+            <element signature="e#57#988#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="26" />
+        <state relative-caret-position="242">
+          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="9" />
           <folding>
             <element signature="e#190#867#0#PHP" expanded="false" />
             <element signature="e#1217#1506#0#PHP" expanded="false" />
@@ -829,40 +842,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/menu_example.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="66" column="30" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="66" selection-end-column="30" />
-          <folding>
-            <element signature="e#57#988#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wxModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="172" column="41" lean-forward="false" selection-start-line="172" selection-start-column="41" selection-end-line="172" selection-end-column="41" />
+        <state relative-caret-position="197">
+          <caret line="134" column="45" lean-forward="false" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="45" />
           <folding>
             <element signature="n#valid#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#content#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="e#1654#4551#0#PHP" expanded="false" />
             <element signature="e#1728#3148#0#PHP" expanded="false" />
-            <element signature="e#5623#6435#0#PHP" expanded="false" />
-            <element signature="e#6586#7058#0#PHP" expanded="false" />
+            <element signature="e#4572#5478#0#PHP" expanded="false" />
+            <element signature="e#5669#6481#0#PHP" expanded="false" />
+            <element signature="e#6632#7104#0#PHP" expanded="false" />
             <element signature="n#checkSignature#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getCurlData#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#jsonToArray#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getAccessToken#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#createMenu#0;n#wxModel#0;n#!!top" expanded="false" />
             <element signature="n#getMenu#0;n#wxModel#0;n#!!top" expanded="false" />
-            <marker date="1496633557219" expanded="true" signature="3224:3581" ph="..." />
-            <marker date="1496633557219" expanded="false" signature="4689:5117" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="4983:5082" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="5711:6117" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="6625:7053" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="6919:7018" ph="..." />
-            <marker date="1496633557219" expanded="true" signature="8074:8333" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="3224:3581" ph="..." />
+            <marker date="1496633747009" expanded="false" signature="4689:5117" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="4983:5082" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="5757:6163" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="6671:7099" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="6965:7064" ph="..." />
+            <marker date="1496633747009" expanded="true" signature="8120:8379" ph="..." />
           </folding>
         </state>
       </provider>

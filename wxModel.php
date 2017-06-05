@@ -132,7 +132,7 @@ EOT;
                 if($msgtype == 'event')
                 {
                     $event = $postObj->Event;
-
+                    $key = $postObj->EventKey;
                     if($event == 'subscribe')
                     {
                         $textTpl = "<xml>
