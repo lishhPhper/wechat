@@ -2,9 +2,72 @@
 
 include '../wxModel.php';
 $model = new wxModel();
-echo $model->getAccessToken();
+$access_token = $model->getAccessToken();
+$url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$access_token;
+$arr = array(
+    "button"=>array(
+        array(
+            "type"=>"click",
+            "name"=>"最新新闻",
+            "key"=>"news_zero"
+        ),
+        array(
+            "name"=>"menu",
+            "sub_button"=> array(
+                array(
+                    "type"=>"click",
+                    "name"=>"福利",
+                    "key"=>"welfare"
+                ),
+                array(
+                    "type"=>"click",
+                    "name"=>"广告",
+                    "key"=>"advent"
+                )
+            )
+        ),
+        array(
+            "type" => "view",
+            "name" => "搜索" ,
+            "url" => "http://www.soso.com/"
+        )
+    )
+);
+$json = json_encode($arr);
+$ch = curl_init();
 
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322)");
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt($ch, CURLOPT_AUTOREFERER, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 
+$info = curl_exec($ch);
+
+//判读执行过程中是否有错误，有则发送数据错误报告.
+if (curl_errno($ch)) {
+    echo 'Error' . curl_error($ch); //用户检查php运行环境中的curl模块开启情况.
+}
+
+curl_close($ch);
+print_r($info);
+
+$token_access_url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=" . APPID . "&secret=" . APPSECRET;
+$res = file_get_contents($token_access_url);  //获取文件内容或获取网络请求的内容
+$result = json_decode($res, true);  //接受一个 JSON 格式的字符串并且把它转换为 PHP 变量
+$access_token = $result['access_token'];
+
+$make_menu_url = "https://api.weixin.qq.com/cgi-bin/menu/get?access_token=" . $access_token;
+
+$menu_json = file_get_contents($make_menu_url);
+
+echo $menu_json;
+
+die;
 $postStr = <<< EOT
 <xml>
 <ToUserName><![CDATA[gh_7237c02b0548]]></ToUserName>

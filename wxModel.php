@@ -221,7 +221,7 @@ EOT;
 		}
 	}
 
-	//curl请求，获取返回的数据
+	//curlget请求，获取返回的数据
 	public function getCurlData($url)
     {
         $ch = curl_init();
@@ -273,6 +273,32 @@ EOT;
 
             return $access_token;
         }
+    }
+
+    public function createMenu($token,$data)
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$token);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (compatible; MSIE 5.01; Windows NT 5.0)');
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($ch, CURLOPT_AUTOREFERER, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $tmpInfo = curl_exec($ch);
+        if (curl_errno($ch)) {
+            return curl_error($ch);
+        }
+
+        curl_close($ch);
+        return $tmpInfo;
+    }
+
+    public function getMenu($token)
+    {
+            return file_get_contents("https://api.weixin.qq.com/cgi-bin/menu/get?access_token=".$token);
     }
 }
 
