@@ -427,6 +427,18 @@ EOT;
         return $this->getCurlData($url);
     }
 
+    //调用接口凭证type是媒体文件类型得到mediaId
+    public function getMediaID($filename)
+    {
+        $access_token = $this->getAccessToken();
+        $type='image';
+        $url = "https://api.weixin.qq.com/cgi-bin/material/add_material?access_token=".$access_token."&type=".$type;
+        $data=array("media"=>'@'. $filename);
+        $json = json_decode($data,1);
+        $res=$this->getCurlData( $url ,'post', $json);
+        return $res['media_id'];
+    }
+
 }
 
 ?>
